@@ -11,7 +11,6 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
@@ -20,10 +19,9 @@ import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.activity.viewModels
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import kotlin.getValue
-
-// The item count for the plural example
-const val MOCK_ITEM_COUNT = 5
 
 // --- VIEW MODEL (Minimal for Plural Demo) ---
 class InventoryViewModel : ViewModel() {
@@ -127,9 +125,9 @@ fun ManualRTLCheck() {
     // otherwise it points "forward" (visually right in LTR mode).
     val arrowIcon = remember(layoutDirection) {
         if (layoutDirection == LayoutDirection.Rtl) {
-            Icons.Default.ArrowBack
+            Icons.AutoMirrored.Filled.ArrowBack
         } else {
-            Icons.Default.ArrowForward
+            Icons.AutoMirrored.Filled.ArrowForward
         }
     }
 

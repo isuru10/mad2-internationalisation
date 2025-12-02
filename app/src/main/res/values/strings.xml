@@ -1,7 +1,3 @@
 <resources>
     <string name="app_name">internationalisation_demo</string>
-    <string name="welcome_title">Hello World!</string>
-    <string name="rtl_demo_label">RTL Demo</string>
-    <string name="continue_checkout">Continue Checkout</string>
-    <string name="add_to_cart_button">Add to Cart</string>
 </resources>

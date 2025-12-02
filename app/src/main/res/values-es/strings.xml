@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">internationalisation_demo</string>
-    <string name="welcome_title">¡Hola Mundo!</string>
-    <string name="rtl_demo_label">RTL Demo</string>
-    <string name="continue_checkout">Continuar con el pago</string>
-    <string name="add_to_cart_button">añadir a la cesta</string>
-</resources>

@@ -42,6 +42,7 @@ class InventoryViewModel : ViewModel() {
 
 // --- COMPOSE UI COMPONENTS ---
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun InternationalisationScreen(viewModel: InventoryViewModel) {
 
@@ -68,8 +69,8 @@ fun InternationalisationScreen(viewModel: InventoryViewModel) {
 
             // 2. Plural Resource Example (Slide 8)
             CartCounter(viewModel = viewModel)
-
-            Divider(Modifier.padding(vertical = 16.dp))
+//
+            HorizontalDivider(Modifier.padding(vertical = 16.dp))
 
             // 3. Manual RTL Check Example (Slide 11)
             ManualRTLCheck()
